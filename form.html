@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+
+</head>
+
+<style>
+    body{
+        text-align: center; 
+        display: flex;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+        height: 100%;
+        margin: 0;
+        justify-content: center;
+        font-weight: 800;
+    
+  
+    }
+    .mb{
+        margin-bottom: 15px;
+    }
+
+    .center{
+        margin: auto;
+        background-color: rgb(248, 201, 227);
+        border: none;
+        border-radius: 1.5rem;
+           
+    }
+</style>
+
+
+<body>
+
+<form> 
+    <fieldset class="mb center">
+    <div class="mb">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="text">
+    </div>
+
+    <div class="mb">
+        <label>gender:</label>
+        <input type="radio" id="male" name="radio" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="radio" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <div class="mb">
+        <label for="checkbox">Domitory:</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+    </div>
+
+    <div class="mb">
+        <label for="select">School Level:</label>
+        <select id="select" name="select">
+            <option value="option1">1st</option>
+            <option value="option2">2nd</option>
+            <option value="option3">3th</option>
+            <option value="option1">4th</option>
+        </select>
+    </div>
+
+    <div class="mb">
+        <label for="date">Birthday:</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <div class="mb">
+        <label for="textarea">Introduce:</label>
+        <textarea id="textarea" name="textarea"></textarea>
+    </div>
+
+
+ 
+       <!-- <legend>Fieldset Legend</legend> -->
+     
+        <div class="mb">
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+    
+        <datalist id="datalist-options">
+            <option value="Computer science">
+            <option value="Electronic engineering">
+            <!-- <option value="Option 3"> -->
+        </datalist>
+        <div>
+            <label for="datalist-input">Major:</label>
+            <input type="text" id="datalist-input" name="datalist" list="datalist-options">
+        </div>
+    
+    </fieldset>
+
+   
+</form>
+
+</body>
+</html>
